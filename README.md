@@ -36,9 +36,6 @@ Local development convenience:
 2. Or manually start backend and frontend in two shells:
 
 Backend (repo root):
-```powershell
-E:/ne/Django/.venv/Scripts/python.exe manage.py runserver
-```
 
 Frontend (from `frontend/`):
 ```powershell
