@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ product.name }} — Cato Store</title>
+  <link href="/static/css/tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-3xl mx-auto p-6">
+    <a href="{% url 'products:product_list' %}" class="text-blue-600">← Back to products</a>
+    <header class="mt-4 mb-6">
+      <h1 class="text-3xl font-bold">{{ product.name }}</h1>
+      <p class="text-lg text-gray-700">${{ product.price }}</p>
+    </header>
+    <div class="bg-white p-6 rounded shadow">
+      <p>{{ product.description }}</p>
+      <div class="mt-4 text-sm text-gray-600">Stock: {{ product.stock_quantity }}</div>
+      <div class="mt-4">
+        <form method="post" action="{% url 'orders:add_to_cart' product.slug %}">
+          {% csrf_token %}
+          <label class="text-sm">Quantity</label>
+          <input type="number" name="quantity" value="1" min="1" class="border px-2 py-1 rounded w-20" />
+          <button type="submit" class="ml-2 bg-blue-600 text-white px-3 py-1 rounded">Add to cart</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

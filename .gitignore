@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Vite build
+frontend/dist/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+desktop.ini

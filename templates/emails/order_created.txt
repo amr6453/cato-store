@@ -1,0 +1,10 @@
+Hello {{ order.user.username }},
+
+Thanks — we received your order #{{ order.pk }}.
+
+Total: {{ order.total_amount }}
+
+We will notify you when payment is confirmed.
+
+Regards,
+Cato-Store

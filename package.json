@@ -1,0 +1,14 @@
+{
+  "name": "cato-store",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.6.0"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/src/styles.css -o ./static/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./assets/src/styles.css -o ./static/css/tailwind.css --watch"
+  }
+}
