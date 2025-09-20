@@ -20,7 +20,6 @@ python manage.py runserver
 - `/api/auth/login/` - login (returns token)
 - `/api/auth/profile/me/` - get/update profile
 - `/api/payments/stripe/webhook/` - simulated stripe webhook endpoint
-- `/api/schema/` - OpenAPI schema
 
 See `API.md` for detailed GraphQL and REST examples for frontend developers.
 
